@@ -1,0 +1,11 @@
+use_frameworks!
+platform :ios, '8.0'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+
+ https://api.weibo.com/oauth2/authorize?client_id=1355617602&redirect_uri=http://www.baidu.com/ 
+
+
+App Key：1355617602
+App Secret：4b5f948a59ed200626890070ba5b8ddd
