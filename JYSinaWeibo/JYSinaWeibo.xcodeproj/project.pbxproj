@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181B086A1BE98C7F00AAFD9E /* JYStatusBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B08691BE98C7F00AAFD9E /* JYStatusBottomView.swift */; };
+		181B086C1BE98E5C00AAFD9E /* JYStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B086B1BE98E5C00AAFD9E /* JYStatusPictureView.swift */; };
+		181B086E1BEB4ADE00AAFD9E /* JYStatusForwardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B086D1BEB4ADE00AAFD9E /* JYStatusForwardCell.swift */; };
+		181B08701BEB583900AAFD9E /* JYStatusNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B086F1BEB583900AAFD9E /* JYStatusNormalCell.swift */; };
 		181CC45C1BE0531B004D5C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CC45B1BE0531B004D5C81 /* AppDelegate.swift */; };
 		181CC4631BE0531B004D5C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181CC4621BE0531B004D5C81 /* Assets.xcassets */; };
 		184B09161BE5948D00BD2A67 /* JYUserAccout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B09151BE5948D00BD2A67 /* JYUserAccout.swift */; };
@@ -34,10 +38,17 @@
 		18C90C2E1BE7BE6000A32D5B /* statuses.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C90C2D1BE7BE6000A32D5B /* statuses.json */; };
 		18C90C301BE873FA00A32D5B /* JYStatuscell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C90C2F1BE873FA00A32D5B /* JYStatuscell.swift */; };
 		18C90C321BE8BE1700A32D5B /* JYStatusTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C90C311BE8BE1700A32D5B /* JYStatusTopView.swift */; };
+		18C90C351BE8D10500A32D5B /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C90C341BE8D10500A32D5B /* UIView+AutoLayout.swift */; };
+		18DDC6601BF0BB5200590C63 /* JYRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC65F1BF0BB5200590C63 /* JYRefresh.xib */; };
+		18DDC6621BF0C1E600590C63 /* JYRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDC6611BF0C1E600590C63 /* JYRefreshControl.swift */; };
 		A8D6CE9C8DD796F348C4C7F3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF8E20D0A86ECD6AB470824 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181B08691BE98C7F00AAFD9E /* JYStatusBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatusBottomView.swift; sourceTree = "<group>"; };
+		181B086B1BE98E5C00AAFD9E /* JYStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatusPictureView.swift; sourceTree = "<group>"; };
+		181B086D1BEB4ADE00AAFD9E /* JYStatusForwardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatusForwardCell.swift; sourceTree = "<group>"; };
+		181B086F1BEB583900AAFD9E /* JYStatusNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatusNormalCell.swift; sourceTree = "<group>"; };
 		181CC4581BE0531B004D5C81 /* JYSinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYSinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181CC45B1BE0531B004D5C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181CC4621BE0531B004D5C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +79,9 @@
 		18C90C2D1BE7BE6000A32D5B /* statuses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = statuses.json; sourceTree = "<group>"; };
 		18C90C2F1BE873FA00A32D5B /* JYStatuscell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatuscell.swift; sourceTree = "<group>"; };
 		18C90C311BE8BE1700A32D5B /* JYStatusTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYStatusTopView.swift; sourceTree = "<group>"; };
+		18C90C341BE8D10500A32D5B /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		18DDC65F1BF0BB5200590C63 /* JYRefresh.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYRefresh.xib; sourceTree = "<group>"; };
+		18DDC6611BF0C1E600590C63 /* JYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYRefreshControl.swift; sourceTree = "<group>"; };
 		9AF8E20D0A86ECD6AB470824 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34971ED6E8A5A74D80087E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +151,11 @@
 			children = (
 				184E6DF81BE7763F0099F23B /* JYHomeTitleButton.swift */,
 				18C90C2F1BE873FA00A32D5B /* JYStatuscell.swift */,
+				181B086F1BEB583900AAFD9E /* JYStatusNormalCell.swift */,
+				181B086D1BEB4ADE00AAFD9E /* JYStatusForwardCell.swift */,
 				18C90C311BE8BE1700A32D5B /* JYStatusTopView.swift */,
+				181B08691BE98C7F00AAFD9E /* JYStatusBottomView.swift */,
+				181B086B1BE98E5C00AAFD9E /* JYStatusPictureView.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 		189C593B1BE0DDCC0089F33E /* Classse */ = {
 			isa = PBXGroup;
 			children = (
+				18C90C331BE8D0EB00A32D5B /* 第三方库 */,
 				189C593C1BE0DDCC0089F33E /* Extension */,
 				189C593D1BE0DDCC0089F33E /* Library */,
 				189C593E1BE0DDCC0089F33E /* Model */,
@@ -273,6 +292,8 @@
 		189C59471BE0DDCC0089F33E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18DDC65F1BF0BB5200590C63 /* JYRefresh.xib */,
+				18DDC6611BF0C1E600590C63 /* JYRefreshControl.swift */,
 				184E6DF71BE776140099F23B /* cell */,
 			);
 			path = View;
@@ -385,6 +406,15 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		18C90C331BE8D0EB00A32D5B /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				18C90C341BE8D10500A32D5B /* UIView+AutoLayout.swift */,
+			);
+			name = "第三方库";
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2B75778E0985AA8E49724858 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181CC4631BE0531B004D5C81 /* Assets.xcassets in Resources */,
+				18DDC6601BF0BB5200590C63 /* JYRefresh.xib in Resources */,
 				18C90C2E1BE7BE6000A32D5B /* statuses.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,21 +556,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				184E6DEC1BE764170099F23B /* JYStatus.swift in Sources */,
+				181B086E1BEB4ADE00AAFD9E /* JYStatusForwardCell.swift in Sources */,
 				184E6DF21BE7720F0099F23B /* UIColor+Extension.swift in Sources */,
 				18C90C321BE8BE1700A32D5B /* JYStatusTopView.swift in Sources */,
 				186630361BE4DE070080ED8D /* JYNetworkTools.swift in Sources */,
 				181CC45C1BE0531B004D5C81 /* AppDelegate.swift in Sources */,
 				184E6DEA1BE7026C0099F23B /* JYWelcomeViewController.swift in Sources */,
 				184E6DE81BE702110099F23B /* JYNewFeatureViewController.swift in Sources */,
+				18C90C351BE8D10500A32D5B /* UIView+AutoLayout.swift in Sources */,
+				181B08701BEB583900AAFD9E /* JYStatusNormalCell.swift in Sources */,
 				184E6DF91BE7763F0099F23B /* JYHomeTitleButton.swift in Sources */,
 				184E6DF01BE770480099F23B /* UIButton+Extension.swift in Sources */,
 				189C59641BE0EA7D0089F33E /* JYMainTabBar.swift in Sources */,
 				189C595A1BE0E8F10089F33E /* JYBaseTableViewController.swift in Sources */,
 				184E6DEE1BE76CBE0099F23B /* UIBarbutton+Extension.swift in Sources */,
 				189C595E1BE0E9BE0089F33E /* JYHomeViewController.swift in Sources */,
+				181B086C1BE98E5C00AAFD9E /* JYStatusPictureView.swift in Sources */,
+				18DDC6621BF0C1E600590C63 /* JYRefreshControl.swift in Sources */,
 				189C59661BE0EFAC0089F33E /* JYVistorView.swift in Sources */,
 				184E6DF41BE773090099F23B /* UILabel+Extension.swift in Sources */,
 				184E6DE41BE6FBFD0099F23B /* 代码心得.swift in Sources */,
+				181B086A1BE98C7F00AAFD9E /* JYStatusBottomView.swift in Sources */,
 				184B09161BE5948D00BD2A67 /* JYUserAccout.swift in Sources */,
 				184E6DFB1BE77E520099F23B /* JYUser.swift in Sources */,
 				189C595C1BE0E9A70089F33E /* JYDiscoverViewController.swift in Sources */,

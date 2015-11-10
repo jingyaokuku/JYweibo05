@@ -10,6 +10,17 @@ import UIKit
 import AFNetworking
 import  SVProgressHUD
 
+//统一管理的cellID 
+enum JYStatusCellIdentifier:String{
+
+    case   NormalCell = "NormalCell"
+    
+    case  ForwardCell = "ForwardCell"
+    
+
+
+}
+
 class JYHomeViewController: JYBaseTableViewController {
   ///MARK:- 属性
   ///微博模型数组
@@ -32,6 +43,9 @@ class JYHomeViewController: JYBaseTableViewController {
         }
         
         setupNavigationBar()
+        prepareTableView()
+        
+        refreshControl = JYRefreshControl()
         //加载微博数据
         print("加载微博数据")
         JYStatus.loadStatus { (statuses, error) -> () in
@@ -53,18 +67,23 @@ class JYHomeViewController: JYBaseTableViewController {
             //有微博数据
             
             self.statuses = statuses
-            print("statues:\(statuses)")
+           // print("statues:\(statuses)")
         }
     }
     private func prepareTableView() {
         //tableView注册cell
         //原创微博cell
-        tableView.registerClass(JYStatuscell.self , forCellReuseIdentifier: "cell")
+//        tableView.registerClass(JYStatuscell.self , forCellReuseIdentifier: "cell")
+         tableView.registerClass(JYStatusNormalCell.self, forCellReuseIdentifier: JYStatusCellIdentifier.NormalCell.rawValue)
         
+        //注册转发微博
+        tableView.registerClass(JYStatusForwardCell.self, forCellReuseIdentifier: JYStatusCellIdentifier.ForwardCell.rawValue)
         //去掉tableView 的分割线
         tableView.separatorStyle=UITableViewCellSeparatorStyle.None
         
-       // tableView.rowHeight=200
+//        tableView.estimatedRowHeight=300
+//        
+//        tableView.rowHeight=UITableViewAutomaticDimension
         
     }
     
@@ -109,7 +128,7 @@ class JYHomeViewController: JYBaseTableViewController {
     
       ///MARK : tableView 的代理和数据源
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         //获取模型
         let status = statuses![indexPath.row]
         
@@ -120,15 +139,33 @@ class JYHomeViewController: JYBaseTableViewController {
         
         }
         //没有缓存的行高
-        
+        let id = status.cellID()
         //获取cell
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! JYStatuscell
+        let cell = tableView.dequeueReusableCellWithIdentifier(id) as! JYStatuscell
         
         //调用计算行高的方法
-        let rowHeight = cell.
+       let rowHeight = cell.rowHeight(status)
+        
+        //将行高缓存起来
+        status.rowHeight = rowHeight
+        
+        return rowHeight
+       
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statuses?.count ?? 0
+    }
     
-    
-    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let status = statuses![indexPath.row]
+        // 获取cell
+        let cell = tableView.dequeueReusableCellWithIdentifier(status.cellID()) as! JYStatuscell
+        
+        // 设置cell的模型
+        cell.status = statuses?[indexPath.row]
+        
+        return cell
+    }
    }
